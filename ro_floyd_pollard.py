@@ -2,13 +2,13 @@ from numpy import gcd, abs
 import pandas as pd
 
 
-def isPrime(n):
-    if n % 2 == 0:
-        return n == 2
-    d = 3
-    while d * d <= n and n % d != 0:
-        d += 2
-    return d * d > n
+def is_prime(n):
+	if n % 2 == 0:
+		return n == 2
+	d = 3
+	while d * d <= n and n % d != 0:
+		d += 2
+	return d * d > n
 
 
 # отображение берётся f(x) = Rm(x^2 + 1)
@@ -36,5 +36,5 @@ def rho_floyd_pollard(n, x0=2, y0=2):
 	return gcd(abs(x0 - y0), n)
 
 
-a = rho_floyd_pollard(n := int(input('Введите число для факторизации: ')))
-print(f"\n{a} * {n // a}")
+answer = rho_floyd_pollard(number := int(input('Введите число для факторизации: ')))
+print(f"\n{answer} * {number // answer}")

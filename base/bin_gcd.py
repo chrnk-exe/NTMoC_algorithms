@@ -26,3 +26,5 @@ def bin_gcd(a, b, output=False):
         print()
 
     return gcd * a
+
+

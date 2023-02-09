@@ -10,11 +10,12 @@ def solve_linear_comparasion(a, b, m):
 		return b * inverse % m
 	else:
 
-		while not any([a % 2, b % 2, m % 2]):
+		while all([a % 2, b % 2, m % 2]):
 			a = a // 2
 			b = b // 2
 			m = m // 2
 
+		# Критерий линейного сравнения
 		d = gcd(a, m)
 		if b % d != 0:
 			print('Решений нет')
