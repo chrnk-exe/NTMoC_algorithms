@@ -1,19 +1,20 @@
 from base.inverse import inv
 from base.factorization import factor
 from chinese_theorem import get_solution
-from numpy import gcd
+# from numpy import gcd
+from base.many_gcd import gcd
 
 
-def solve_linear_comparasion(a, b, m):
+def solve_linear_comparison(a, b, m):
 	inverse = inv(a, m)
 	if inverse:
 		return b * inverse % m
 	else:
 
-		while all([a % 2, b % 2, m % 2]):
-			a = a // 2
-			b = b // 2
-			m = m // 2
+		divider = gcd(a, b, m)
+		a = a // divider
+		b = b // divider
+		m = m // divider
 
 		# Критерий линейного сравнения
 		d = gcd(a, m)
@@ -28,4 +29,4 @@ def solve_linear_comparasion(a, b, m):
 		return get_solution(new_b, modules)
 
 
-print(solve_linear_comparasion(4, 20, 30))
+print(solve_linear_comparison(4, 20, 30))

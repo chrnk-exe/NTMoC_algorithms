@@ -1,6 +1,5 @@
 import math
-
-from algorithms.fast_pow import fast_pow
+from base.fast_pow import degree as fast_pow
 
 
 def decompose_to_primes(number):
@@ -21,8 +20,7 @@ def is_smooth(number, r):
 
 def search_a_smooth_square_for_module(module, r):
     for i in range(1, 2000):
-        number = fast_pow(2, i, module, onlyResult=True)
-
+        number = fast_pow(2, i, module)
         if is_smooth(number, r):
             ans = math.sqrt(number)
             if ans % 1 == 0:

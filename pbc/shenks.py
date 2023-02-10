@@ -1,7 +1,7 @@
 from base.factorization import factor
 from base.stupid_is_prime import is_prime
 from numpy import gcd
-from gelfond_shenks import ind
+from Factorization.gelfond_shenks import ind
 from base.get_prime_root import get_prime_root
 
 
@@ -44,5 +44,5 @@ def one_step(n, a, m):
 	return x0
 
 
-solve_pbc(7, 17, 53)
+# solve_pbc(7, 17, 53)
 
