@@ -1,7 +1,7 @@
 from base.factorization import factor
 from base.stupid_is_prime import is_prime
 from numpy import gcd
-from Factorization.gelfond_shenks import ind
+from Logarithm.gelfond_shenks import ind
 from base.get_prime_root import get_prime_root
 
 

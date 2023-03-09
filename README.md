@@ -16,13 +16,13 @@ The course was devoted to arithmetic of residuals, solving linear, exponential a
 | Translation to Chinese code     | 🔨    |
 | Translation CC to Polycode      | 🔨    |
 
-| List of Algorithms (Factorization)   | Stage  |
-|--------------------------------------|:-------|
-| Dixon algorithm                      | 🔨     |
-| Pollard's rho algorithm              | ❌      |
-| Pollard's rho algorithm (Mod. Floyd) | ✅      |
-| Pollard's p-1 method                 | ❌      |
-| Fermat's factorization method        | ❌      |
+| List of Algorithms (Factorization)   | Stage   |
+|--------------------------------------|:--------|
+| Dixon algorithm                      | 🔨      |
+| Pollard's rho algorithm              | ❌       |
+| Pollard's rho algorithm (Mod. Floyd) | ✅       |
+| Pollard's p-1 method                 | ❌       |
+| Fermat's factorization method        | 🔨      |
 
 | List of Algorithms (Discrete Logarithm) | Stage |
 |-----------------------------------------|:------|
