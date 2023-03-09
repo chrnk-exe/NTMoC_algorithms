@@ -4,17 +4,17 @@ In this repository there is a base folder, which implements the basic algorithms
 
 The course was devoted to arithmetic of residuals, solving linear, exponential and power comparisons modulo prime and composite numbers, as well as solving comparisons modulo a polynomial, discrete logarithm and factorization of numbers, and also touched on the elliptic curve, also used in cryptographic protocols.
 
-| List of Algorithms (Calculator) | Stage     |
-|---------------------------------|:----------|
-| Add Double                      | ✅         |
-| Fast Pow                        | ✅         |
-| Karatsuba                       | ✅         |
-| Euclid                          | 🔨        |
-| Binary Euclid                   | ✅         |
-| Extended Euclid                 | 🔨        |
-| Extended Binary Euclid          | ✅         |
-| Translation to Chinese code     | 🔨        |
-| Translation CC to Polycode      | 🔨        |
+| List of Algorithms (Calculator) | Stage |
+|---------------------------------|:------|
+| Add Double                      | ✅     |
+| Fast Pow                        | ✅     |
+| Karatsuba                       | ✅     |
+| Euclid                          | 🔨    |
+| Binary Euclid                   | ✅     |
+| Extended Euclid                 | 🔨    |
+| Extended Binary Euclid          | ✅     |
+| Translation to Chinese code     | 🔨    |
+| Translation CC to Polycode      | 🔨    |
 
 | List of Algorithms (Factorization)   | Stage  |
 |--------------------------------------|:-------|
@@ -30,11 +30,16 @@ The course was devoted to arithmetic of residuals, solving linear, exponential a
 | Adleman's algorithm                     | 🔨    |
 | Gelfond-Shanks algorithm                | ✅     |
 
-| List of Algorithms (Discrete Logarithm) | Stage |
-|-----------------------------------------|:------|
-| Pollard's rho algorithm                 | ❌     |
-| Adleman's algorithm                     | ❌     |
-| Gelfond-Shanks algorithm                | 🔨    |
+| List of Algorithms (Comparisons) | Stage   |
+|----------------------------------|:--------|
+| Tonelli-Shanks algorithm         | 🔨      |
+| Generalized Tonelli-Shanks       | ❌       |
+| Chipolla algorithm               | ❌       |
+| Berlekamp-Rabin algorithm        | ❌       |
+| Pohlig–Hellman algorithm         | ❌       |
+| Linear Comparison                | 🔨      |
+| The Chinese Remainder theorem    | 🔨      |
+
 
 ✅ - Implemented
 
