@@ -2,7 +2,7 @@ from base.inverse import inv
 from base.factorization import factor
 from chinese_theorem import get_solution
 # from numpy import gcd
-from base.many_gcd import gcd
+from Calculators.many_gcd import gcd
 
 
 def solve_linear_comparison(a, b, m):

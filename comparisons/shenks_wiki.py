@@ -1,13 +1,6 @@
-from pbc.shenks import is_solvable
+from comparisons.shenks import is_solvable
+from base.Legengre import Legendre
 # Это решает только уравнения вида x^2 = n mod p
-
-def Legendre(a, p):
-	if a % p == 0:
-		return 0
-	elif a ** ((p-1) // 2) % p == 1:
-		return 1
-	else:
-		return -1
 
 #x^2 = n mod p
 def solve_pbc(n, p):

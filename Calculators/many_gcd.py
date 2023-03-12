@@ -1,4 +1,4 @@
-from bin_gcd import bin_gcd
+from Calculators.bin_gcd import bin_gcd
 
 
 def gcd(*args):

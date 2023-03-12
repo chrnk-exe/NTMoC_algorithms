@@ -1,5 +1,5 @@
 from base.factorization import factor
-from base.stupid_is_prime import is_prime
+from base.checking_for_simplicity import is_prime
 from numpy import gcd
 from Logarithm.gelfond_shenks import ind
 from base.get_prime_root import get_prime_root

@@ -1,6 +1,5 @@
 import math
-from base.fast_pow import degree
-from base.add_double import mult
+from Calculators.fast_pow import degree
 
 
 # возвращает класс вычетов x по модулю m - 1, где a ^ x == b (mod m)

@@ -1,5 +1,6 @@
 import pandas as pd
-from base.add_double import mult
+from Calculators.add_double import mult
+
 
 def degree(a, b, m, output=False):
 	if output:

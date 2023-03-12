@@ -1,4 +1,4 @@
-from base.bin_gcd import bin_gcd
+from Calculators.bin_gcd import bin_gcd
 
 
 def my_lcm(a, b):

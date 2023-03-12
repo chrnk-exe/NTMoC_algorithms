@@ -1,5 +1,5 @@
 import math
-from base.fast_pow import degree as fast_pow
+from Calculators.fast_pow import degree as fast_pow
 
 
 def decompose_to_primes(number):

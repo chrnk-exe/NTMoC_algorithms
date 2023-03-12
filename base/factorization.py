@@ -9,26 +9,21 @@ def factorization(n, output=False):
     prime = 2
     while prime < n:
         if n % prime == 0:
-            df = df.append(
-                    {
-                        'n': int(n),
-                        'prime': int(prime)
-                    },
-                    ignore_index=True
-                 )
+            df = pd.concat([df, pd.DataFrame(data={'n': [int(n)], 'prime': [int(n)]})], ignore_index=True)
             n /= prime
             continue
 
         prime += 1
 
-    df = df.append(
-             {
-                'n': int(n),
-                'prime': int(n)
-             },
-             ignore_index=True
-         )
+    # df = df.append(
+    #          {
+    #             'n': int(n),
+    #             'prime': int(n)
+    #          },
+    #          ignore_index=True
+    #      )
 
+    df = pd.concat([df, pd.DataFrame(data={'n': [int(n)], 'prime': [int(n)]})], ignore_index=True)
 
     if output:
         print(df)
