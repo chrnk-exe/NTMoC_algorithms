@@ -1,5 +1,5 @@
 from base.factorization import factor
-from base.checking_for_simplicity import is_prime
+from base.checking_for_simplicity import IsPrime
 from numpy import gcd
 from Logarithm.gelfond_shenks import ind
 from base.get_prime_root import get_prime_root
@@ -14,9 +14,9 @@ def is_solvable(n, a, m):
 	return ind(get_prime_root(m), a, m) % d == 0
 
 
-# power binomial comparison
+# power binomial comparison, x^n = a (mod m)
 def solve_pbc(n, a, m):
-	if not is_prime(m):
+	if not IsPrime(m):
 		modules = factor(m)
 		a = [a % module for module in modules]
 		result = []

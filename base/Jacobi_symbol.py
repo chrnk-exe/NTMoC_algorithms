@@ -1,5 +1,5 @@
-from Legengre import Legendre
-from factorization import factor
+from base.Legengre import Legendre
+from base.factorization import factor
 
 
 def Jacobi(a, P):

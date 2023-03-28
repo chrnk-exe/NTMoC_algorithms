@@ -1,9 +1,10 @@
 from random import randint
 from Calculators.bin_gcd import bin_gcd
-from Jacobi_symbol import Jacobi as Jacobi_Symbol
 from Calculators.fast_pow import degree
+from base.Jacobi_symbol import Jacobi
 
-class is_prime:
+
+class IsPrime:
     @staticmethod
     def D_stupid_is_prime(n):
         if n % 2 == 0:
@@ -29,7 +30,7 @@ class is_prime:
             a = randint(2, n-1)
             if bin_gcd(a, n) > 1:
                 return False
-            if a ** ((n - 1) // 2) % n != Jacobi_Symbol(a, n) % n:
+            if a ** ((n - 1) // 2) % n != Jacobi(a, n) % n:
                 return False
         return [True, 1 - 2 ** (-k)] if show_probability else True
 
