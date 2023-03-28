@@ -6,13 +6,13 @@ The course was devoted to arithmetic of residuals, solving linear, exponential a
 
 | List of Algorithms (Calculator) | Stage |
 |---------------------------------|:------|
-| Add Double                      | ✅     |
-| Fast Pow                        | ✅     |
+| Add Double                      | 🔨    |
+| Fast Pow                        | 🔨    |
 | Karatsuba                       | ✅     |
 | Euclid                          | 🔨    |
-| Binary Euclid                   | ✅     |
+| Binary Euclid                   | 🔨     |
 | Extended Euclid                 | 🔨    |
-| Extended Binary Euclid          | ✅     |
+| Extended Binary Euclid          | 🔨     |
 | Translation to Chinese code     | 🔨    |
 | Translation CC to Polycode      | 🔨    |
 
@@ -20,7 +20,7 @@ The course was devoted to arithmetic of residuals, solving linear, exponential a
 |--------------------------------------|:--------|
 | Dixon algorithm                      | 🔨      |
 | Pollard's rho algorithm              | ❌       |
-| Pollard's rho algorithm (Mod. Floyd) | ✅       |
+| Pollard's rho algorithm (Mod. Floyd) | 🔨       |
 | Pollard's p-1 method                 | ❌       |
 | Fermat's factorization method        | 🔨      |
 
@@ -28,7 +28,7 @@ The course was devoted to arithmetic of residuals, solving linear, exponential a
 |-----------------------------------------|:------|
 | Pollard's rho algorithm                 | ❌     |
 | Adleman's algorithm                     | 🔨    |
-| Gelfond-Shanks algorithm                | ✅     |
+| Gelfond-Shanks algorithm                | 🔨     |
 
 | List of Algorithms (Comparisons) | Stage   |
 |----------------------------------|:--------|

@@ -1,3 +1,4 @@
+from pprint import pprint
 
 class Karatsuba:
     def __init__(self, a, b):
@@ -36,3 +37,4 @@ class Karatsuba:
             'data': [['a', 'b', 'n', 'A1', 'B1', 'A', 'A0', 'B0', 'B', 'tA', 'tB', 'C', 'Ответ'], [a, b, n, a1, b1, a_value, a0, b0, b_value, ta, tb, c, result]]
         })
         return result
+
