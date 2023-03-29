@@ -26,7 +26,7 @@ def get_number_by_order(q, m):
 				if b ** (q // pi) % m == 1:
 					break
 			else:
-				print(f"Показателю {q} отвечает число {b} по модулю {m}")
+				# print(f"Показателю {q} отвечает число {b} по модулю {m}")
 				return b
 	return 0
 

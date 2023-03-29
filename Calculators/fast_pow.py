@@ -30,3 +30,4 @@ def degree(a, b, m, output=False):
 		print()
 
 	return (b * c) % m
+
