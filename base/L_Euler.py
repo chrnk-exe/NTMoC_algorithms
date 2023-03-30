@@ -1,10 +1,6 @@
 from base.lcm import lcm as M
 from base.phi import phi
-from base.factorization import factorization
-
-
-def factor(n):
-	return list(factorization(n).iloc[:, 1])
+from base.factorization import factorization, factor
 
 
 def L(m):

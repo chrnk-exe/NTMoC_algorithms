@@ -9,13 +9,14 @@ def get_order(n, m):
 	return -1
 
 
-## поиск числа, отвечающего данному показателю по модулю
-def get_number_by_order(q, m):
+# поиск числа, отвечающего данному показателю по модулю
+def get_number_by_order(q, m, all_numbers=False):
 	L_result = L(m)
 	ps = factor(q)
+	result = []
 	if L_result % q != 0:
 		print('Задача не имеет решений')
-		return
+		return None
 	for i in range(2, m):
 		a = i
 		b = a ** (L_result // q) % m
@@ -27,8 +28,11 @@ def get_number_by_order(q, m):
 					break
 			else:
 				# print(f"Показателю {q} отвечает число {b} по модулю {m}")
-				return b
-	return 0
+				if all_numbers:
+					result.append(b)
+				else:
+					return b
+	return result
 
 
 
