@@ -52,7 +52,39 @@ def square_AMM(delta, module):
 # https://encyclopediaofmath.org/wiki/Euler_criterion
 # http://hackmat.se/kurser/TATM54/booktot.pdf page 76 (88)
 def is_nth_euler_criterion(degree, basis, module):
+	# print(degree, basis, module)
 	return basis ** (phi(module) // gcd(phi(module), degree)) % module == 1
+
+
+def square_AMM_nprime(delta, module, m):
+# 	тут верим, что module это p ** m и delta - квадратичный вычет
+	reduced_system = get_reduced_system(module ** m)
+	rho = 0
+	for item in reduced_system:
+		if item ** ((module ** m - 1) // 2) != 1:
+			rho = item
+			break
+	else:
+		print('There is no quadratic residue in reduced system, idk what to do!!!')
+		return None
+
+	s, t = module**m - 1, 0
+	while s % 2 == 0:
+		s //= 2
+		t += 1
+
+	a = mod_pow(rho, s, module ** m)
+	b = mod_pow(delta, s, module ** m)
+	h = 1
+
+	for i in range(1, t - 1):
+		d = mod_pow(b, 2 ** (t - 1 - i), module ** m)
+		k = 0 if d == 1 else 1
+		b *= a ** (2*k)
+		h *= a ** k
+		a **= 2
+
+	return delta ** ((s + 1) // 2) * h
 
 
 # надо найти алгоритм вычисления nth - вычета
@@ -103,16 +135,17 @@ def rth_root_AMM(r, delta, module):
 
 # print(rth_root_AMM(5, 3, 13), 9 ** 5 % 13) # x^2 = 10 mod 13
 
-
+# x ** q = s mod p
 def rth_root_Anna(q, s, p):
 	r, delta, module = q, s, p
 	if not is_nth_euler_criterion(r, delta, module) or not IsPrime.D_stupid_is_prime(module):
+		print('nth:', is_nth_euler_criterion(r, delta, module))
 		return None
 
 	g = get_prime_root(p)
 	if g is None:
 		return None
-	h = (p - 1) // q
+	h = (p - 1)
 	while h % q == 0:
 		h //= q
 	# return
@@ -126,4 +159,4 @@ def rth_root_Anna(q, s, p):
 	return v * g ** (-z * t)
 
 #
-print(rth_root_Anna(5, 2, 13), 9 ** 5 % 13) # x^2 = 10 mod 13
+print(rth_root_Anna(5, 2, 13)) # x^2 = 10 mod 13

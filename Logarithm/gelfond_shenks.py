@@ -6,7 +6,6 @@ from Calculators.fast_pow import degree
 # стоит переделать, тк эта версия не оптимальна по памяти
 # x = ind_a (b) mod m
 def ind(basis, free_member, module):
-	# print(basis, free_member, module)
 	e = int(math.sqrt(module)) + 1
 	ae = degree(e, basis, module)
 	cy = []
