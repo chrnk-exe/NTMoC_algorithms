@@ -30,19 +30,21 @@ The course was devoted to arithmetic of residuals, solving linear, exponential a
 | Adleman's algorithm                     | 🔨    |
 | Gelfond-Shanks algorithm                | 🔨     |
 
-| List of Algorithms (Comparisons) | Stage   |
-|----------------------------------|:--------|
-| Tonelli-Shanks algorithm         | 🔨      |
-| Generalized Tonelli-Shanks       | ❌       |
-| Chipolla algorithm               | ❌       |
-| Berlekamp-Rabin algorithm        | ❌       |
-| Pohlig–Hellman algorithm         | ❌       |
-| Linear Comparison                | 🔨      |
-| The Chinese Remainder theorem    | 🔨      |
+| List of Algorithms (Comparisons) | Stage     |
+|----------------------------------|:----------|
+| Tonelli-Shanks algorithm         | 🔨        |
+| Generalized Tonelli-Shanks       | 🚩        |
+| Chipolla algorithm               | ❌         |
+| Berlekamp-Rabin algorithm        | ❌         |
+| Pohlig–Hellman algorithm         | ❌         |
+| Linear Comparison                | 🔨        |
+| The Chinese Remainder theorem    | 🔨        |
 
 
 ✅ - Implemented
 
 🔨 - There is a calculator, but it is not built into the application
+
+🚩 - There is a calculator, but it is not covered by sufficient tests and it is unknown whether it solves everything correctly or there are errors in the implementation
 
 ❌ - There is no calculator
