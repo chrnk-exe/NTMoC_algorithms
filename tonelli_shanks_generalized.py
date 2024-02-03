@@ -18,3 +18,5 @@ def tonelli_shanks_generalized(n, a, p):
 # print(is_nth_euler_criterion(5, 2, 13), gcd(12, 5), 2 ** 12 % 13)
 print(inv(7, 23))
 print(is_nth_euler_criterion(3, 22, 43))
+
+print('123')
